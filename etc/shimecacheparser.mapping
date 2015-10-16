@@ -1,0 +1,30 @@
+{
+	"mappings": {
+		"shimcache": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"LastModified":{
+					"type": "date",
+					"format": "MM/dd/yy HH:mm:ss.SSSSSS||MM/dd/yy HH:mm:ss"
+				},
+				"LastUpdate":{
+					"type": "date",
+					"format": "MM/dd/yy HH:mm:ss.SSSSSS||MM/dd/yy HH:mm:ss"
+				},
+				"Path":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FileSize":{
+				    "type": "long"
+				},
+				"ExecFlag":{
+					"type": "string"
+				}
+			}
+		}
+	}
+}

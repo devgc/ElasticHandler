@@ -1,0 +1,18 @@
+{
+	"delimiter":"\t",
+	"start_line":"7",
+	"type":"tz_pf",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_pf_1.10.mapping",
+	"columns":[
+		"prefetch file name",
+		"app name",
+		"times ran",
+		"last run UTC",
+		"modify date UTC",
+		"access date UTC",
+		"create date UTC",
+		"path appname",
+		"previous dates run"
+	],
+	"add_columns":[]
+}

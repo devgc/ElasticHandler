@@ -1,0 +1,33 @@
+{
+	"delimiter":",",
+	"start_line":"5",
+	"type":"shimcache",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\shimecacheparser.mapping",
+	"columns":[
+		"LastModified",
+		"LastUpdate",
+		"Path",
+		"FileSize",
+		"ExecFlag"
+	],
+	"add_columns":{
+		"EntryNames":{
+			"type":"get_from_path",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Path}"
+			]
+		},
+		"FileName":{
+			"type":"get_filename",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Path}"
+			]
+		}
+	}
+}

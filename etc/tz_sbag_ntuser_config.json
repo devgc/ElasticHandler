@@ -1,0 +1,49 @@
+{
+	"delimiter":"\t",
+	"start_line":"8",
+	"type":"tz_sbag",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_sbags_0.42.mapping",
+	"columns":[
+		"Regdate UTC",
+		"MFU",
+		"Modify Datetime UTC",
+		"Access Datetime UTC",
+		"Create Datetime UTC",
+		"Type",
+		"Bag",
+		"File Size",
+		"Inode",
+		"Seq",
+		"Full Path",
+		"Source Name",
+		"User Acct",
+		"Extra Metadata",
+		"bag registry dates related to this entry"
+	],
+	"add_columns":{
+		"FileName":{
+			"type":"get_filename",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Full Path}"
+			]
+		},
+		"EntryNames":{
+			"type":"get_from_path",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Full Path}"
+			]
+		},
+		"EntryReferences":{
+			"type":"append",
+			"source":[
+				"{Inode}-{Seq}"
+			]
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"mappings": {
+		"l2t": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"l2t_datetime":{
+					"type": "date",
+					"format": "yyyy-MM-dd HH:mm:ss.SSSSSS||yyyy-MM-dd HH:mm:ss"
+				},
+				"l2t_timezone":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_MACB":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_source":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_sourcetype":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_user":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_host":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_short":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_desc":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_version":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_filename":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_inode":{
+					"type": "long"
+				},
+				"l2t_notes":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_format":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"l2t_extra":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

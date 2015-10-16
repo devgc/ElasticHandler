@@ -1,0 +1,28 @@
+{
+	"delimiter":"\t",
+	"start_line":"7",
+	"type":"l2t",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\l2t.mapping",
+	"columns":[
+		"l2t_datetime",
+		"l2t_timezone",
+		"l2t_MACB",
+		"l2t_source",
+		"l2t_sourcetype",
+		"l2t_type",
+		"l2t_user",
+		"l2t_host",
+		"l2t_short",
+		"l2t_desc",
+		"l2t_version",
+		"l2t_filename",
+		"l2t_inode",
+		"l2t_notes",
+		"l2t_format",
+		"l2t_extra"
+	],
+	"add_columns":[
+	],
+	"sub_record_columns":[
+	]
+}

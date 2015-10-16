@@ -1,0 +1,67 @@
+{
+	"mappings": {
+		"tz_jp": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FileName":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FileExt":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryNames":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryReferences":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"usn datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"MFT entry":{
+				    "type": "long"
+				},
+				"entry_seqnum":{
+				    "type": "long"
+				},
+				"parent MFT":{
+				    "type": "long"
+				},
+				"parent_seqnum":{
+				    "type": "long"
+				},
+				"usn":{
+				    "type": "long"
+				},
+				"attributes":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"filename":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"type change":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"MFT status":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"Path":{
+				    "type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

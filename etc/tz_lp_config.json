@@ -1,0 +1,67 @@
+{
+	"delimiter":"\t",
+	"start_line":"7",
+	"type":"tz_linkstruct",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_linkstruct.mapping",
+	"columns":[
+		"Source Location",
+		"Source Type",
+		"File Modify Datetime UTC",
+		"File Access Datetime UTC",
+		"File Create Datetime UTC",
+		"Target Modify Datetime UTC",
+		"Target Access Datetime UTC",
+		"Target Create Datetime UTC",
+		"ObjID Datetime UTC",
+		"Target Attrib",
+		"Inode",
+		"Seq",
+		"File Size",
+		"Target Name",
+		"Idlist Extra Info",
+		"Volume Type",
+		"Volume Serial",
+		"Volume Label",
+		"Local Path",
+		"Common Path",
+		"Network and Device Info",
+		"Extra Info",
+		"Netbios Name",
+		"Volume Id",
+		"Object Id",
+		"MAC Addr"
+	],
+	"add_columns":{
+		"EntryNames":{
+			"type":"get_from_path",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Local Path}",
+				"{Target Name}",
+				"{Common Path}"
+			]
+		},
+		"FileName":{
+			"type":"get_filename",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Local Path}",
+				"{Target Name}",
+				"{Common Path}"
+			]
+		},
+		"EntryReferences":{
+			"type":"append",
+			"source":[
+				"{Inode}-{Seq}"
+			]
+		}
+	},
+	"sub_record_columns":[
+		"Extra Info"
+	]
+}

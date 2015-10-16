@@ -1,0 +1,29 @@
+{
+	"delimiter":"\t",
+	"start_line":"2",
+	"type":"sbe",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\sbe_0.6.1.0.mapping",
+	"columns":[
+		"BagPath",
+		"Slot",
+		"NodeSlot",
+		"MRUPosition",
+		"AbsolutePath",
+		"ShellType",
+		"Value",
+		"ChildBags",
+		"CreatedOn",
+		"ModifiedOn",
+		"AccessedOn",
+		"LastWriteTime",
+		"MFTEntry",
+		"MFTSequenceNumber",
+		"ExtensionBlockCount",
+		"FirstExplored",
+		"LastExplored",
+		"Miscellaneous"
+	],
+	"add_columns":{
+		
+	}
+}

@@ -1,0 +1,96 @@
+{
+	"mappings": {
+		"tz_usp": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Device Name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Vid_Pid Date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Install Date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Disk Dev Date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Vol Dev Date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Vid":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Pid":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Hub":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Port":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Vendor":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Product":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Rev":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume GUID":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume Label":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Users Datetime UTC":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Serial Number":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Other":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Notes":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume Serial":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

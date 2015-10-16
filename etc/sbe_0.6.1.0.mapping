@@ -1,0 +1,77 @@
+{
+	"mappings": {
+		"sbe": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-dd HH:mm:ss"
+				},
+				"BagPath":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Slot":{
+					"type": "long"
+				},
+				"NodeSlot":{
+					"type": "long"
+				},
+				"MRUPosition":{
+					"type": "long"
+				},
+				"AbsolutePath":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"ShellType":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Value":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"ChildBags":{
+					"type": "long"
+				},
+				"CreatedOn":{
+					"type": "date",
+					"format":"MM/dd/yyyy hh:mm:ss a Z"
+				},
+				"ModifiedOn":{
+					"type": "date",
+					"format":"MM/dd/yyyy hh:mm:ss a Z"
+				},
+				"AccessedOn":{
+					"type": "date",
+					"format":"MM/dd/yyyy hh:mm:ss a Z"
+				},
+				"LastWriteTime":{
+					"type": "date",
+					"format":"MM/dd/yyyy hh:mm:ss a Z"
+				},
+				"MFTEntry":{
+					"type": "long"
+				},
+				"MFTSequenceNumber ":{
+					"type": "long"
+				},
+				"ExtensionBlockCount":{
+					"type": "long"
+				},
+				"FirstExplored":{
+					"type": "date",
+					"format":"MM/dd/yyyy hh:mm:ss a Z"
+				},
+				"LastExplored":{
+					"type": "date",
+					"format":"MM/dd/yyyy hh:mm:ss a Z"
+				},
+				"Miscellaneous":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,168 @@
+{
+	"mappings": {
+		"tz_linkstruct": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-dd HH:mm:ss"
+				},
+				"FileRef":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FileName":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FileExt":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryNames":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryReferences":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FullFileName":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"BaseFileName":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"ParentName":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"PointerLocation":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Source Location": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Source Type": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"AppId": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"MRU MFU": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Stream": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"MRU Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"File Modify Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"File Access Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"File Create Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Target Modify Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Target Access Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Target Create Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"ObjID Datetime UTC": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"Target Attrib": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Inode": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Seq": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"File Size": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Target Name": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Idlist Extra Info": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume Type": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume Serial": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume Label": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Local Path": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Common Path": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Network and Device Info": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Extra Info": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Netbios Name": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Volume Id": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"Object Id": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"MAC Addr": {
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+{
+	"mappings": {
+		"tz_sbag": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"regdate UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FileName":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FileExt":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryNames":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryReferences":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"mru":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"modify date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"access date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"create date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"bag":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"file size":{
+					"type": "long"
+				},
+				"inode":{
+					"type": "long"
+				},
+				"seq":{
+					"type": "long"
+				},
+				"user acct":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"full path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"source name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"extra metadata":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"bag registry dates related to this entry":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

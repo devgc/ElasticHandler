@@ -1,0 +1,176 @@
+{
+	"mappings": {
+		"tz_ntfswalk_perpath": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FileName":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"FileExt":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryNames":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"EntryReferences":{
+				    "type": "string",
+					"index": "not_analyzed"
+				},
+				"path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"fullname":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"MFT entry":{
+					"type": "long"
+				},
+				"entry seqnum":{
+					"type": "long"
+				},
+				"parent MFT":{
+					"type": "long"
+				},
+				"parent seqnum":{
+					"type": "long"
+				},
+				"SI m datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"SI a datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"SI c datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"SI b datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FN m datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FN a datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FN c datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"FN b datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"8.3 m datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"8.3 a datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"8.3 c datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"8.3 b datetime UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"SI mdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI mdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI mtime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"SI adate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI atime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"SI cdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI ctime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"SI bdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI btime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN mdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN mtime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN adate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN atime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN cdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN ctime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN bdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN btime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"ext":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

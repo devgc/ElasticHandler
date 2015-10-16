@@ -1,0 +1,56 @@
+{
+	"delimiter":"|",
+	"start_line":"7",
+	"type":"tz_ntfswalk_perpath",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_ntfswalk_0.57.mapping",
+	"columns":[
+		"MFT entry",
+		"entry seqnum",
+		"parent MFT",
+		"parent seqnum",
+		"SI m datetime UTC",
+		"SI a datetime UTC",
+		"SI c datetime UTC",
+		"SI b datetime UTC",
+		"FN m datetime UTC",
+		"FN a datetime UTC",
+		"FN c datetime UTC",
+		"FN b datetime UTC",
+		"type",
+		"FileExt",
+		"size",
+		"FileName",
+		"path",
+		"sym link",
+		"object ID",
+		"ADS metadata",
+		"Time warning",
+		"8.3 m datetime UTC",
+		"8.3 a datetime UTC",
+		"8.3 c datetime UTC",
+		"8.3 b datetime UTC"
+	],
+	"add_columns":{
+		"Fullname":{
+			"type":"append",
+			"source":[
+				"{path}{FileName}"
+			]
+		},
+		"EntryNames":{
+			"type":"get_from_path",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{path}{FileName}"
+			]
+		},
+		"EntryReferences":{
+			"type":"append",
+			"source":[
+				"{MFT entry}-{entry seqnum}"
+			]
+		}
+	}
+}

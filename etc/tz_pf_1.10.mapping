@@ -1,0 +1,47 @@
+{
+	"mappings": {
+		"tz_pf": {
+			"properties": {
+				"index_timestamp":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"prefetch file name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"app name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"times ran":{
+					"type":"long"
+				},
+				"last run UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"modify date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"access date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"create date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"path appname":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"previous dates run":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

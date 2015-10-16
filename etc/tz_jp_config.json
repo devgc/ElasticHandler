@@ -1,0 +1,51 @@
+{
+	"delimiter":"\t",
+	"start_line":"7",
+	"type":"tz_jp",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_jp.mapping",
+	"columns":[
+		"usn datetime UTC",
+		"MFT entry",
+		"entry_seqnum",
+		"parent MFT",
+		"parent_seqnum",
+		"usn",
+		"attributes",
+		"FileName",
+		"type change",
+		"MFT status",
+		"Path"
+	],
+	"add_columns":{
+		"FileExt":{
+			"type":"get_ext",
+			"options":{
+			},
+			"source":[
+				"{FileName}"
+			]
+		},
+		"EntryNames":{
+			"type":"get_from_path",
+			"options":{
+				"sep":"\\"
+			},
+			"source":[
+				"{Path}{FileName}"
+			]
+		},
+		"FileRef":{
+			"type":"append",
+			"source":[
+				"{MFT entry}-{entry_seqnum}"
+			]
+		},
+		"EntryReferences":{
+			"type":"append_list",
+			"source":[
+				"{MFT entry}-{entry_seqnum}",
+				"{parent MFT}-{parent_seqnum}"
+			]
+		}
+	}
+}

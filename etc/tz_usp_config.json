@@ -1,0 +1,40 @@
+{
+	"delimiter":"|",
+	"start_line":"7",
+	"type":"tz_usp",
+	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_usp_0.34.mapping",
+	"columns":[
+		"Device Name",
+		"Vid_Pid Date UTC",
+		"Install Date UTC",
+		"Disk Dev Date UTC",
+		"Vol Dev Date UTC",
+		"Type",
+		"Vid",
+		"Pid",
+		"Hub",
+		"Port",
+		"Vendor",
+		"Product",
+		"Rev",
+		"Volume GUID",
+		"Volume",
+		"Volume Label",
+		"Users Datetime UTC",
+		"Serial Number",
+		"Other",
+		"Notes"
+	],
+	"add_columns":{
+		"Volume Serial":{
+			"type":"from_regex",
+			"options":{
+				"regex":"^([0-9A-Za-z]{4}-[0-9A-Za-z]{4})",
+				"value":"{0}"
+			},
+			"source":[
+				"{Notes}"
+			]
+		}
+	}
+}

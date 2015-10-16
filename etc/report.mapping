@@ -1,0 +1,266 @@
+{
+	"mappings": {
+		"tz_sbag": {
+			"properties": {
+				"regdate UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS"
+				},
+				"mru":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"modify date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS"
+				},
+				"access date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS"
+				},
+				"create date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS"
+				},
+				"type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"bag":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"file size":{
+					"type": "long"
+				},
+				"inode":{
+					"type": "long"
+				},
+				"seq":{
+					"type": "long"
+				},
+				"full path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"source name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"extra metadata":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"bag registry dates related to this entry":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		},
+		"tz_ntfswalk_perpath": {
+			"properties": {
+				"path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"fullname":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"MFT entry":{
+					"type": "long"
+				},
+				"entry seqnum":{
+					"type": "long"
+				},
+				"parent MFT":{
+					"type": "long"
+				},
+				"parent seqnum":{
+					"type": "long"
+				},
+				"SI mdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI mtime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"SI adate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI atime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"SI cdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI ctime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"SI bdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"SI btime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN mdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN mtime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN adate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN atime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN cdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN ctime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"FN bdate":{
+					"type": "date",
+					"format": "MM/dd/yyyy"
+				},
+				"FN btime-UTC":{
+					"type": "date",
+					"format": "HH:mm:ss.SSS"
+				},
+				"type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"ext":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		},
+		"tz_lp": {
+			"properties": {
+				"source path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"source type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"file modify date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"file access date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"file create date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"tgt modify date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"tgt access date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"tgt create date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"ObjID date UTC":{
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSS||MM/dd/yyyy HH:mm:ss"
+				},
+				"tgt attrib":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"inode":{
+					"type": "long"
+				},
+				"seq":{
+					"type": "long"
+				},
+				"file size":{
+					"type": "long"
+				},
+				"target name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"idlist extra info":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"vol type":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"vol serial":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"vol label":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"local path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"common path":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"network_device info":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"extra info":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"netbios name":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"volume id":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"object id":{
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"mac addr":{
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}
