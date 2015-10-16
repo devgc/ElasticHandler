@@ -9,8 +9,7 @@ elastichandler.py --host 127.0.0.1 --index sbe.test --config etc\sbe_config.json
 ## Config Files
 When indexing a file with the elastichandler, you must pass in a configuration file. This file tells the handler how to index the report.
 
-http://binaryforay.blogspot.com/p/software.html
-Example for Eric Zimmerman's SBECmd.exe version 0.6.1.0 report:
+Example for Eric Zimmerman's SBECmd.exe (http://binaryforay.blogspot.com/p/software.html) version 0.6.1.0 report:
 ```
 {
 	#delimiter of report columns#
