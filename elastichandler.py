@@ -420,7 +420,7 @@ class FileIndexer():
                 fullname = fullname.strip(sep)
             except UnicodeDecodeError as error:
                 logging.warn('File {}; Error: {}'.format(self.options.report,error))
-                fullname = '<UNICODE_ERROR_DURRING_INDEXING>'
+                fullname = '<UNICODE_ERROR_DURING_INDEXING>'
             
             entries = fullname.split(sep)
             
