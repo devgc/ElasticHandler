@@ -2,7 +2,7 @@
 Assorted classes and methods for indexing reports and retrieving information from an elastic index.
 
 Indexing a file:
-elastichandler.py --host 127.0.0.1 --index sbe.test --config etc\sbe_config.json --report report_examples\sbe.donald.usrclass.dat.tsv
+'''elastichandler.py --host 127.0.0.1 --index sbe.test --config etc\sbe_config.json --report report_examples\sbe.donald.usrclass.dat.tsv'''
 
 ## Config Files
 When indexing a file with the elastichandler, you must pass in a configuration file. This file tells the handler how to index the report.
