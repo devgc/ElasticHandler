@@ -2,7 +2,7 @@
 	"delimiter":"\t",
 	"start_line":"7",
 	"type":"tz_jp",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_jp.mapping",
+	"map_file":"etc\\tz_jp.mapping",
 	"columns":[
 		"usn datetime UTC",
 		"MFT entry",

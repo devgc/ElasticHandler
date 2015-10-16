@@ -2,7 +2,7 @@
 	"delimiter":"|",
 	"start_line":"7",
 	"type":"tz_ntfswalk_perpath",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_ntfswalk_0.57.mapping",
+	"map_file":"etc\\tz_ntfswalk_0.57.mapping",
 	"columns":[
 		"MFT entry",
 		"entry seqnum",

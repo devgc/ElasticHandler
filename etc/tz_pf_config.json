@@ -2,7 +2,7 @@
 	"delimiter":"\t",
 	"start_line":"7",
 	"type":"tz_pf",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_pf_1.10.mapping",
+	"map_file":"etc\\tz_pf_1.10.mapping",
 	"columns":[
 		"prefetch file name",
 		"app name",

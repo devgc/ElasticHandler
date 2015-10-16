@@ -2,7 +2,7 @@
 	"delimiter":"\t",
 	"start_line":"7",
 	"type":"l2t",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\l2t.mapping",
+	"map_file":"etc\\l2t.mapping",
 	"columns":[
 		"l2t_datetime",
 		"l2t_timezone",

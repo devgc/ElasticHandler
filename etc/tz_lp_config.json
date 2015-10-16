@@ -2,7 +2,7 @@
 	"delimiter":"\t",
 	"start_line":"7",
 	"type":"tz_linkstruct",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_linkstruct.mapping",
+	"map_file":"etc\\tz_linkstruct.mapping",
 	"columns":[
 		"Source Location",
 		"Source Type",

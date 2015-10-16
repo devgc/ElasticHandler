@@ -2,7 +2,7 @@
 	"delimiter":"\t",
 	"start_line":"8",
 	"type":"tz_sbag",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_sbags_0.42.mapping",
+	"map_file":"etc\\tz_sbags_0.42.mapping",
 	"columns":[
 		"Regdate UTC",
 		"MFU",

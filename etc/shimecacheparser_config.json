@@ -2,7 +2,7 @@
 	"delimiter":",",
 	"start_line":"5",
 	"type":"shimcache",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\shimecacheparser.mapping",
+	"map_file":"etc\\shimecacheparser.mapping",
 	"columns":[
 		"LastModified",
 		"LastUpdate",

@@ -2,7 +2,7 @@
 	"delimiter":"|",
 	"start_line":"7",
 	"type":"tz_usp",
-	"map_file":"D:\\developement\\python\\ElasticHandler\\source\\etc\\tz_usp_0.34.mapping",
+	"map_file":"etc\\tz_usp_0.34.mapping",
 	"columns":[
 		"Device Name",
 		"Vid_Pid Date UTC",
