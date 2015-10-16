@@ -1,5 +1,5 @@
 {
-	"delimiter":"\t",
+	"delimiter":"|",
 	"start_line":"8",
 	"type":"tz_sbag",
 	"map_file":"etc\\tz_sbags_0.42.mapping",

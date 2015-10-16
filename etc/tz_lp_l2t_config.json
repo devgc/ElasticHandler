@@ -1,5 +1,5 @@
 {
-	"delimiter":"\t",
+	"delimiter":"|",
 	"start_line":"7",
 	"type":"l2t",
 	"map_file":"etc\\l2t.mapping",

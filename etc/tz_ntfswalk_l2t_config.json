@@ -1,5 +1,5 @@
 {
-	"delimiter":"\t",
+	"delimiter":"|",
 	"start_line":"7",
 	"type":"l2t",
 	"index_suffix":".l2t",

@@ -1,5 +1,5 @@
 {
-	"delimiter":"\t",
+	"delimiter":"|",
 	"start_line":"7",
 	"type":"tz_linkstruct",
 	"map_file":"etc\\tz_linkstruct.mapping",

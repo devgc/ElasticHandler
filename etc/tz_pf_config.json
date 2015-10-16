@@ -1,5 +1,5 @@
 {
-	"delimiter":"\t",
+	"delimiter":"|",
 	"start_line":"7",
 	"type":"tz_pf",
 	"map_file":"etc\\tz_pf_1.10.mapping",
