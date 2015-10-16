@@ -22,6 +22,7 @@ import logging
 import os
 import json
 import csv
+csv.field_size_limit(sys.maxsize)
 import md5
 import datetime
 import copy
