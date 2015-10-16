@@ -14,7 +14,7 @@ Example for Eric Zimmerman's SBECmd.exe version 0.6.1.0 report:
 ```
 {
 	#delimiter of report columns#
-	"delimiter":"|",
+	"delimiter":"\t",
 	
 	#line to start indexing from#
 	"start_line":"2",
