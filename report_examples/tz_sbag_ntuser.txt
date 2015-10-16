@@ -1,0 +1,40 @@
+sbag - full ver: 0.42; Copyright (c) TZWorks LLC
+	
+	
+"cmdline: <filelist> ... | ..\root\tools\TZworks\sbag64.exe -pipe -base10 -pair_datetime -no_whitespace -csv -csv_separator |"
+
+analyzing hive: f:\SANS408\Donald_Blake_Evidence\C-Drive\Extracts\SANS408\p1-sys\registry\ntuser\232321.Donald.NTUSER.DAT
+regdate [UTC]|mru|modify date [UTC]|access date [UTC]|create date [UTC]|type|bag|file size|inode|seq#|full path|source subkey/value name|user acct|extra metadata|bag registry dates related to this entry
+10/21/2013 20:14:47.863|| | | |dir|1||||Desktop\|Shell\BagMRU\|Donald||09/23/2013 19:22:18.914
+10/21/2013 20:14:47.863|<-| | | |dir|||||Desktop\{CLSID_ComputersAndDevices}\|Shell\BagMRU\2|Donald||
+10/21/2013 20:10:52.066|<-| | | |dir|||||Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\|Shell\BagMRU\2\2|Donald||
+10/21/2013 20:10:56.465|| | | |dir|18||||Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Documents\|Shell\BagMRU\2\2\0|Donald|[1] \\192.168.1.48\Documents; [2] Microsoft Network|10/21/2013 20:02:47.172
+10/21/2013 20:10:56.465|<-| | | |dir|19||||Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\|Shell\BagMRU\2\2\1|Donald|[1] \\192.168.1.48\Users; [2] Microsoft Network|10/21/2013 20:02:53.744
+10/21/2013 20:02:55.760|<-|10/21/2013 19:49:50|10/21/2013 19:49:50|10/20/2013 01:36:16|dir|20||373903|2|Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\dblak_000\|Shell\BagMRU\2\2\1\0|Donald||10/21/2013 20:02:55.760
+10/21/2013 20:03:26.781|<-|10/21/2013 19:49:26|10/20/2013 01:40:28|10/20/2013 01:36:16|dir|21||373912|2|Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\dblak_000\Documents\|Shell\BagMRU\2\2\1\0\0|Donald|[1] @shell32.dll,-21770|10/21/2013 20:03:29.125; 10/21/2013 20:03:26.781
+10/21/2013 20:14:47.863||10/21/2013 20:04:18|10/21/2013 20:04:18|10/21/2013 20:04:18|dir|22||39854|84|Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\dblak_000\Documents\Articles\|Shell\BagMRU\2\2\1\0\0\0|Donald||10/21/2013 20:04:53.121
+10/21/2013 20:14:47.863||10/21/2013 20:04:18|10/21/2013 20:04:18|10/21/2013 20:04:18|dir|23||39825|17|Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\dblak_000\Documents\Documents\|Shell\BagMRU\2\2\1\0\0\1|Donald||10/21/2013 20:11:10.346
+10/21/2013 20:14:47.863||10/21/2013 20:04:18|10/21/2013 20:04:18|10/21/2013 20:04:18|dir|24|4096|39831|16|Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\dblak_000\Documents\Lean startup\|Shell\BagMRU\2\2\1\0\0\2|Donald||10/21/2013 20:11:37.576
+10/21/2013 20:14:47.863|<-|10/21/2013 20:04:18|10/21/2013 20:04:18|10/21/2013 20:04:18|dir|25|4096|39841|137|Desktop\{CLSID_ComputersAndDevices}\192.168.1.48\Users\dblak_000\Documents\Templates\|Shell\BagMRU\2\2\1\0\0\3|Donald||10/21/2013 20:14:47.863
+10/21/2013 20:10:52.066|| | | |dir|||||Desktop\{CLSID_ComputersAndDevices}\JOTUMHEIM\|Shell\BagMRU\2\1|Donald|[1] ID : Provider\Microsoft.Networking.Netbios//Microsoft Windows Network::\\ASGARD\\JOTUMHEIM|
+10/01/2013 20:15:31.846|<-| | | |dir|9||||Desktop\{CLSID_ComputersAndDevices}\JOTUMHEIM\Users\|Shell\BagMRU\2\1\0|Donald|[1] \\JOTUMHEIM\Users; [2] Microsoft Network|10/01/2013 20:15:31.848; 10/01/2013 20:15:31.847
+10/01/2013 20:15:33.447|<-|10/01/2013 20:12:00|10/01/2013 20:12:00|10/01/2013 20:11:50|dir|10||187950|5|Desktop\{CLSID_ComputersAndDevices}\JOTUMHEIM\Users\jboon_000\|Shell\BagMRU\2\1\0\0|Donald||10/01/2013 20:15:33.449; 10/01/2013 20:15:33.448
+10/01/2013 20:15:35.464|<-|10/01/2013 20:12:00|10/01/2013 20:12:00|10/01/2013 20:11:50|dir|11|4096|189090|3|Desktop\{CLSID_ComputersAndDevices}\JOTUMHEIM\Users\jboon_000\Documents\|Shell\BagMRU\2\1\0\0\0|Donald|[1] @shell32.dll,-21770|10/01/2013 20:15:35.466; 10/01/2013 20:15:35.465
+10/21/2013 20:10:52.066|| | | |dir|||||Desktop\{CLSID_ComputersAndDevices}\valhalla\|Shell\BagMRU\2\0|Donald||
+10/21/2013 19:48:58.994|<-| | | |dir|15||||Desktop\{CLSID_ComputersAndDevices}\valhalla\public\|Shell\BagMRU\2\0\1|Donald|[1] \\valhalla\public; [2] Microsoft Network|10/17/2013 19:17:20.341; 10/17/2013 19:17:20.339
+10/21/2013 19:48:58.994|| | | |dir|6||||Desktop\{CLSID_ComputersAndDevices}\valhalla\Users\|Shell\BagMRU\2\0\0|Donald|[1] \\valhalla\Users; [2] Microsoft Network|10/01/2013 18:47:55.082; 10/01/2013 18:47:55.080; 10/01/2013 18:44:49.516; 10/01/2013 18:44:49.515
+10/01/2013 18:44:53.387|<-|10/01/2013 18:44:34|10/01/2013 18:44:34|10/01/2013 18:44:26|dir|7||53281|100|Desktop\{CLSID_ComputersAndDevices}\valhalla\Users\dblak_000\|Shell\BagMRU\2\0\0\0|Donald||10/01/2013 18:48:00.862; 10/01/2013 18:48:00.861; 10/01/2013 18:44:53.388; 10/01/2013 18:44:53.387
+10/01/2013 18:48:02.406|<-|10/01/2013 18:47:58|10/01/2013 18:47:58|10/01/2013 18:47:58|dir|8||24864|3|Desktop\{CLSID_ComputersAndDevices}\valhalla\Users\dblak_000\History\|Shell\BagMRU\2\0\0\0\0|Donald||10/01/2013 18:48:02.407; 10/01/2013 18:48:02.406
+10/21/2013 20:14:47.863|| | | |dir|||||Desktop\{CLSID_MyComputer}\|Shell\BagMRU\1|Donald||
+09/23/2013 21:02:05.485|<-| |09/23/2013 18:17:24|09/23/2013 18:17:24|dir|||194366|12|Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\|Shell\BagMRU\1\0|Donald|[1] ASGARD~1.COM; [2] {CLSID_Shortcuts}|
+10/18/2013 02:20:06.573||07/22/2013 05:00:52|07/22/2013 05:00:52|07/22/2013 05:00:52|dir|17||||Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\IWConvertedForms\|Shell\BagMRU\1\0\2|Donald||10/18/2013 02:20:00.051; 10/18/2013 02:20:00.048
+10/18/2013 02:20:06.573||07/22/2013 05:01:20|07/22/2013 05:01:20|07/22/2013 05:01:20|dir|12||||Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\m\|Shell\BagMRU\1\0\1|Donald||10/07/2013 08:30:35.911; 10/07/2013 08:30:35.902
+10/18/2013 02:20:06.573|<-|09/21/2013 22:00:00|09/21/2013 22:00:00|07/22/2013 05:01:22|dir|5||||Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\Shared Documents\|Shell\BagMRU\1\0\0|Donald||09/23/2013 21:02:05.491; 09/23/2013 21:02:05.486
+10/18/2013 02:20:09.666|<-|09/26/2013 17:12:40|09/26/2013 17:12:40|09/26/2013 17:11:06|dir|13||||Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\Shared Documents\Business Plans\|Shell\BagMRU\1\0\0\0|Donald||10/07/2013 11:36:03.088; 10/07/2013 11:36:03.082
+10/13/2013 09:34:03.467|<-|09/26/2013 17:12:20|09/26/2013 17:12:20|09/26/2013 17:11:06|dir|14||||Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\Shared Documents\Business Plans\In Review - NOT FOR RELEASE\|Shell\BagMRU\1\0\0\0\0|Donald||10/13/2013 09:34:03.474; 10/13/2013 09:34:03.468
+10/18/2013 02:20:09.666||10/13/2013 12:40:18|10/13/2013 12:40:18|10/13/2013 12:40:18|dir|16||||Desktop\{CLSID_MyComputer}\asgardventurecapital.sharepoint.com\Shared Documents\Startups\|Shell\BagMRU\1\0\0\1|Donald||10/18/2013 02:19:56.961; 10/18/2013 02:19:56.957
+10/21/2013 20:14:47.863|| | | |dir|||||Desktop\{CLSID_Network}\|Shell\BagMRU\0|Donald||
+09/23/2013 19:22:18.914|<-| | | |dir|2||||Desktop\{CLSID_Network}\DavWWWRoot\|Shell\BagMRU\0\0|Donald|[1] \\asgardventurecapital.sharepoint.com@SSL\DavWWWRoot; [2] Web Client Network; [3] https://asgardventurecapital.sharepoint.com|09/23/2013 19:22:18.914
+09/23/2013 19:22:18.914||07/22/2013 05:01:20|07/22/2013 05:01:20|07/22/2013 05:01:20|dir|4||||Desktop\{CLSID_Network}\DavWWWRoot\m\|Shell\BagMRU\0\0\1|Donald||09/23/2013 19:22:18.929
+09/23/2013 19:22:18.914|<-|09/21/2013 22:00:00|09/21/2013 22:00:00|07/22/2013 05:01:22|dir|3||||Desktop\{CLSID_Network}\DavWWWRoot\Shared Documents\|Shell\BagMRU\0\0\0|Donald||09/23/2013 19:22:18.929; 09/23/2013 19:22:18.914
+
