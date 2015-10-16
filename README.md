@@ -9,6 +9,7 @@ When indexing a file with the elastichandler, you must pass in a configuration f
 
 http://binaryforay.blogspot.com/p/software.html
 Example for Eric Zimmerman's SBECmd.exe version 0.6.1.0 report:
+```
 {
 	#delimiter of report columns#
 	"delimiter":"|",
@@ -49,6 +50,7 @@ Example for Eric Zimmerman's SBECmd.exe version 0.6.1.0 report:
 		
 	}
 }
+```
 
 ### Adding Columns
 ## Mapping Files
