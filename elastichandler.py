@@ -636,10 +636,48 @@ class EsHandler():
             records = result['hits']['hits']
             
             for hit in records:
-                print hit
+                yield hit
             scroll_size -= len(records)
+    
+    def FetchRecordsFromQuery(self,query,index=None):
+        '''
+        Yield hits based off of a query from a json str
+        IN
+            self: EsHandler
+            query: the query (can be dictionary or json str)
+            index: the index name
+        OUT
+            hit: Yields hits for the query
+        '''
+        #If query is a string, load from json#
+        if isinstance(query,str) or isinstance(query,unicode):
+            query = json.loads(query)
+            
+        index = self._SetIndex(index)
         
-        return None
+        result = self.esh.search(
+            index=index,
+            scroll='60s',
+            size=1000,
+            body=query
+        )
+        
+        total_hits = result['hits']['total']
+        
+        scroll_size = total_hits
+        
+        while (scroll_size > 0):
+            scroll_id = result['_scroll_id']
+            
+            for hit in result['hits']['hits']:
+                yield hit
+                
+            scroll_size -= len(result['hits']['hits'])
+            
+            result = self.esh.scroll(
+                scroll_id=scroll_id,
+                scroll='60s'
+            )
     
     def GetRecordsFromQueryStr_Dict(self,json_str,mapping,index=None):
         '''
