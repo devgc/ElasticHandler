@@ -1,4 +1,5 @@
 {
+	"report_format":"txt",
 	"delimiter":",",
 	"start_line":"5",
 	"type":"shimcache",
