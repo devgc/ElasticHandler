@@ -1,0 +1,6 @@
+{
+    "report_format":"json",
+	"record_key":"gc_link_file",
+	"type":"gc_link_file",
+	"map_file":"etc\\gc_link_0.15.mapping"
+}

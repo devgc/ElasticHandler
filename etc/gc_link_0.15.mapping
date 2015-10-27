@@ -1,0 +1,348 @@
+{
+	"mappings": {
+		"gc_link_file": {
+			"properties": {
+				"ExternalTag": {
+					"type": "string"
+				},
+				"IconLoc": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"Description": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"FileName": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"ModificationDateTime": {
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+					"type": "date"
+				},
+				"LocalPath": {
+					"type": "string"
+				},
+				"Source": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"LnkTrgData": {
+					"properties": {
+						"ParentRefStr": {
+							"type": "string"
+						},
+						"ParentSeqNum": {
+							"type": "long"
+						},
+						"DistinctTypes": {
+							"type": "string"
+						},
+						"ExtentionListing": {
+							"type": "string"
+						},
+						"FileEntries": {
+							"properties": {
+								"ShellItemTypeStr": {
+									"type": "string"
+								},
+								"ExtentionBlocks": {
+									"properties": {
+										"SeqNum": {
+											"type": "long"
+										},
+										"LocalizedName": {
+											"index": "not_analyzed",
+											"type": "string"
+										},
+										"ModificationTime": {
+											"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+											"type": "date"
+										},
+										"Name": {
+											"index": "not_analyzed",
+											"type": "string"
+										},
+										"AccessTime": {
+											"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+											"type": "date"
+										},
+										"Type": {
+											"index": "not_analyzed",
+											"type": "string"
+										},
+										"LongName": {
+											"index": "not_analyzed",
+											"type": "string"
+										},
+										"DataSize": {
+											"type": "long"
+										},
+										"Signature": {
+											"index": "not_analyzed",
+											"type": "string"
+										},
+										"CreationTime": {
+											"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+											"type": "date"
+										},
+										"FileReferenceInt": {
+											"type": "long"
+										},
+										"EntryNum": {
+											"type": "long"
+										},
+										"ExtentionBlockSize": {
+											"type": "long"
+										},
+										"FileSize": {
+											"type": "long"
+										},
+										"RefNum": {
+											"type": "string"
+										}
+									}
+								},
+								"ExtentionBlockCount": {
+									"type": "long"
+								},
+								"ModificationTime": {
+									"type": "string"
+								},
+								"ShellItemTypeHex": {
+									"type": "string"
+								},
+								"FileSize": {
+									"type": "long"
+								},
+								"Name": {
+									"type": "string"
+								}
+							}
+						},
+						"NetworkLocation": {
+							"properties": {
+								"Type": {
+									"index": "not_analyzed",
+									"type": "string"
+								},
+								"Description": {
+									"index": "not_analyzed",
+									"type": "string"
+								},
+								"Location": {
+									"index": "not_analyzed",
+									"type": "string"
+								}
+							}
+						},
+						"ParentEntryNum": {
+							"type": "long"
+						},
+						"DistinctTypesStr": {
+							"type": "string"
+						},
+						"Volume": {
+							"properties": {
+								"ShellItemTypeStr": {
+									"type": "string"
+								},
+								"Type": {
+									"index": "not_analyzed",
+									"type": "string"
+								},
+								"Identifier": {
+									"index": "not_analyzed",
+									"type": "string"
+								},
+								"ShellFolderId": {
+									"index": "not_analyzed",
+									"type": "string"
+								},
+								"ExtentionBlocks": {
+									"properties": {
+										"Signature": {
+											"type": "string"
+										},
+										"ExtentionBlockSize": {
+											"type": "long"
+										}
+									}
+								},
+								"ExtentionBlockCount": {
+									"type": "long"
+								},
+								"ShellItemTypeHex": {
+									"type": "string"
+								},
+								"Name": {
+									"index": "not_analyzed",
+									"type": "string"
+								}
+							}
+						},
+						"ItemCount": {
+							"type": "long"
+						},
+						"RootFolder": {
+							"properties": {
+								"ShellItemTypeStr": {
+									"type": "string"
+								},
+								"Type": {
+									"type": "string"
+								},
+								"ShellFolderId": {
+									"index": "not_analyzed",
+									"type": "string"
+								},
+								"ExtentionBlocks": {
+									"properties": {
+										"Signature": {
+											"type": "string"
+										},
+										"ExtentionBlockSize": {
+											"type": "long"
+										}
+									}
+								},
+								"ExtentionBlockCount": {
+									"type": "long"
+								},
+								"ShellItemTypeHex": {
+									"type": "string"
+								}
+							}
+						},
+						"DistinctTypesHex": {
+							"type": "string"
+						},
+						"ParentLongName": {
+							"index": "not_analyzed",
+							"type": "string"
+						}
+					}
+				},
+				"AppIdCode": {
+					"type": "string"
+				},
+				"EnvVarLoc": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"EntryReferences": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"EntryNames": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"RelativePath": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"FileExt": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"index_timestamp": {
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+					"type": "date"
+				},
+				"AccessDateTime": {
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+					"type": "date"
+				},
+				"BaseName": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"Flags": {
+					"type": "string"
+				},
+				"VolumeLabel": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"DriveSerialNumber": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"NetworkPath": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"DriveType": {
+					"type": "string"
+				},
+				"WorkingDir": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"AppIdName": {
+					"type": "string"
+				},
+				"CreationDateTime": {
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
+					"type": "date"
+				},
+				"CmdArgs": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"Codepage": {
+					"index": "not_analyzed",
+					"type": "string"
+				},
+				"DestInfo": {
+					"properties": {
+						"DLE_Unknown1Hash": {
+							"type": "string"
+						},
+						"DLE_EntryNum": {
+							"type": "long"
+						},
+						"DLE_DroidFileId": {
+							"type": "string"
+						},
+						"DLE_DroidVolId": {
+							"type": "string"
+						},
+						"DLE_Unknown3": {
+							"type": "long"
+						},
+						"DLE_Unknown2": {
+							"type": "long"
+						},
+						"DLE_LastModificationDatetime": {
+							"type": "string"
+						},
+						"DLE_BirthDroidVolId": {
+							"type": "string"
+						},
+						"DLE_PinStatus": {
+							"type": "long"
+						},
+						"DLE_Path": {
+							"type": "string"
+						},
+						"DLE_Hostname": {
+							"type": "string"
+						},
+						"DLE_BirthDroidFileId": {
+							"type": "string"
+						},
+						"DLE_PathSize": {
+							"type": "long"
+						}
+					}
+				},
+				"FileSize": {
+					"type": "long"
+				}
+			}
+		}
+	}
+}
