@@ -3,7 +3,7 @@ Assorted classes and methods for indexing reports and retrieving information fro
 
 Indexing a file:
 ```
-elastichandler.py --host 127.0.0.1 --index sbe.test --config etc\sbe_config.json --report report_examples\sbe.donald.usrclass.dat.tsv
+elastichandler.py --host 127.0.0.1 --index case_index --config etc\sbe_config.json --report report_examples\sbe.donald.usrclass.dat.tsv
 ```
 
 ## Config Files
@@ -12,6 +12,9 @@ When indexing a file with the elastichandler, you must pass in a configuration f
 Example for Eric Zimmerman's SBECmd.exe (http://binaryforay.blogspot.com/p/software.html) version 0.6.1.0 report:
 ```
 {
+	#report format#
+	"report_format":"txt",
+	
 	#delimiter of report columns#
 	"delimiter":"\t",
 	
