@@ -172,6 +172,81 @@ class FileIndexer():
                 index=self.options.index
             )
         
+        if 'report_format' in self.config:
+            if self.config['report_format'] is not None:
+                if self.config['report_format'] == 'json':
+                    self._IndexJsonReport(
+                        esHandler
+                    )
+                elif self.config['report_format'] == 'txt' or self.config['report_format'] == 'csv':
+                    self._IndexCsvReport(
+                        esHandler
+                    )
+            else:
+                raise Exception('report_format should not be None. Use \'csv\' or \'json\'')
+        else:
+            self._IndexCsvReport(
+                esHandler
+            )
+        
+        pass
+    
+    def _IndexJsonReport(self,esHandler):
+        with open(self.options.report, 'rb') as jsonfile:
+            json_report = json.load(jsonfile)
+            
+        if 'record_key' in self.config:
+            if self.config['record_key'] is not None:
+                records = json_report[self.config['record_key']]
+            else:
+                raise Exception('record_key cannot be None')
+            
+        records_to_insert = []
+        for row in records:
+            record = row
+            
+            record.update({
+                'Source':self.options.report,
+                'Source Base Name':os.path.basename(self.options.report),
+                'Evidence Name':self.options.evidence_name
+            })
+            
+            #Add Timestamp#
+            timestamp = datetime.datetime.now()
+            
+            record.update({
+                'index_timestamp': timestamp.strftime("%m/%d/%Y %H:%M:%S.%f")
+            })
+            
+            #Create hash of our record to be the id#
+            m = md5.new()
+            
+            record_string = pickle.dumps(record) #causing speed issues
+            m.update(record_string)
+            hash_id = m.hexdigest()
+            
+            action = {
+                "_index": self.options.index,
+                "_type": self.config['type'],
+                "_id": hash_id,
+                "_source": record
+            }
+            
+            records_to_insert.append(action)
+            
+            if len(records_to_insert) >= FileIndexer.BULK_GROUP_SIZE:
+                esHandler.BulkIndexRecords(
+                    records_to_insert
+                )
+                
+                records_to_insert = []
+        
+        if len(records_to_insert) > 0:
+            esHandler.BulkIndexRecords(
+                records_to_insert
+            )
+    
+    def _IndexCsvReport(self,esHandler):
         with open(self.options.report, 'rb') as csvfile:
             rReader = csv.DictReader(
                 csvfile,
