@@ -17,22 +17,23 @@
 # implied.  See the License for the specific language governing
 # permissions and limitations under the License.
 
-#First we need to bring in our libraries, starting with elasticsearch
-import elasticsearch
 #Json is here to help in debugging by printing dumps of structures
 import json
 import sys
+#First we need to bring in our libraries, starting with elasticsearch
+import elasticsearch
 #sys and codecs to access functions and map the windows unicode encodings in such a way that python will handle them
 import codecs
 #xlsxwriter best xlsx writer
 import xlsxwriter
 #We can use the search class built in elasichandler so we don't have to worry about the
 #size of our result sets
+sys.path.append('..')
 import elastichandler
 
 #Define some variables for elastic's connection here
 HOST = '127.0.0.1'
-INDEX = 'sbe.test'
+INDEX = 'case_index'
 
 #Create Elastic configuration for elastichandler
 esConfig = elastichandler.EsConfig(
@@ -105,7 +106,7 @@ w.autofilter(1, 0, rownumber, 23)
 In this case we are telling aggs to give us the list of all volume serial numbers and the count of how many records exist
 for them. This works because our mappings from the elastichandler project have normalized the field names between all of our
 reports so that all fields that contain Volume Serial numbers are now named Volume Serial'''
-result = es.search(index='sbe.test', body={"size": 0,"aggs": {"serials": { "terms" :{"field" : "Volume Serial"}}}})
+result = es.search(index=INDEX, body={"size": 0,"aggs": {"serials": { "terms" :{"field" : "Volume Serial"}}}})
 #Next we store the sub list of the result that contains the data we want to work with to 'hits'
 hits = result['aggregations']['serials']['buckets']
 #Iterate through all the unique volume serial numbers
