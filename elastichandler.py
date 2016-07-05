@@ -247,14 +247,32 @@ class FileIndexer():
             esHandler.BulkIndexRecords(
                 records_to_insert
             )
+            
+    def _GetQuoteType(self,value):
+        if value == "QUOTE_NONE":
+            return csv.QUOTE_NONE
+        elif value == "QUOTE_ALL":
+            return csv.QUOTE_ALL
+        else:
+            return csv.QUOTE_NONE
     
     def _IndexCsvReport(self,esHandler):
         with open(self.options.report, 'rb') as csvfile:
+            
+            if 'quoting' in self.config:
+                quoting = self._GetQuoteType(self.config['quoting'])
+            else:
+                # Default quoting
+                quoting = csv.QUOTE_NONE
+            
             rReader = csv.DictReader(
                 csvfile,
                 fieldnames=self.config['columns'],
-                delimiter=str(self.config['delimiter'])
+                delimiter=str(self.config['delimiter']),
+                quoting=quoting
             )
+            
+            rReader.line_num = self.config['start_line']
             
             records_to_insert = []
             for row in rReader:
