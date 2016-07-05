@@ -36,12 +36,16 @@ from elasticsearch.helpers import bulk as es_bulk
 from elasticsearch import helpers
 from argparse import ArgumentParser
 
+__VERSION__ = '1.0'
+VERSION = __VERSION__
+
 logging.getLogger("elasticsearch").setLevel(logging.ERROR)
 logging.getLogger("urllib3").setLevel(logging.ERROR)
 
 log_fmt = '%(module)s:%(funcName)s:%(lineno)d %(message)s'
 logging.basicConfig(
-    level = logging.DEBUG
+    level = logging.DEBUG,
+    format=log_fmt
 )
 
 def GetOptions():
