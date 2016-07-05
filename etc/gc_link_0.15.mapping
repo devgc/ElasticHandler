@@ -2,6 +2,10 @@
 	"mappings": {
 		"gc_link_file": {
 			"properties": {
+				"index_timestamp": {
+					"type": "date",
+					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-dd HH:mm:ss"
+				},
 				"ExternalTag": {
 					"type": "string"
 				},
@@ -10,7 +14,6 @@
 					"type": "string"
 				},
 				"Description": {
-					"index": "not_analyzed",
 					"type": "string"
 				},
 				"FileName": {
@@ -25,7 +28,6 @@
 					"type": "string"
 				},
 				"Source": {
-					"index": "not_analyzed",
 					"type": "string"
 				},
 				"LnkTrgData": {
@@ -247,10 +249,6 @@
 					"index": "not_analyzed",
 					"type": "string"
 				},
-				"index_timestamp": {
-					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
-					"type": "date"
-				},
 				"AccessDateTime": {
 					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-DD HH:mm:ss",
 					"type": "date"
@@ -289,7 +287,6 @@
 					"type": "date"
 				},
 				"CmdArgs": {
-					"index": "not_analyzed",
 					"type": "string"
 				},
 				"Codepage": {

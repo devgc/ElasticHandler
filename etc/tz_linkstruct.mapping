@@ -6,6 +6,9 @@
 					"type": "date",
 					"format": "MM/dd/yyyy HH:mm:ss.SSSSSS||MM/dd/yyyy HH:mm:ss||yyyy-MM-dd HH:mm:ss"
 				},
+				"CmdArgs": {
+					"type": "string"
+				},
 				"FileRef":{
 				    "type": "string",
 					"index": "not_analyzed"

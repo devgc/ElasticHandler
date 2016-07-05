@@ -1,5 +1,6 @@
 {
 	"report_format":"txt",
+	"quoting":"QUOTE_NONE",
 	"delimiter":"|",
 	"start_line":"7",
 	"type":"tz_linkstruct",
