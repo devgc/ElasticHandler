@@ -24,7 +24,8 @@ import logging
 import os
 import json
 import csv
-csv.field_size_limit(sys.maxsize)
+MAX_SIZE = int(sys.maxint)
+csv.field_size_limit(MAX_SIZE)
 import md5
 import datetime
 import copy
